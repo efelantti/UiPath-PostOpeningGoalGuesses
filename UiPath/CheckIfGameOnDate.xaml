@@ -66,7 +66,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="797,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Checking if there are games today.&quot;]" />
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" BrowserType="IE" DisplayName="Attach Browser &quot;Tapahtumat Archive - JYP Jyväskylä&quot;" sap:VirtualizedContainerService.HintSize="797,344" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="ce5d5b56549b402335299dcc9e892567" Selector="&lt;html title='Tapahtumat Archive - JYP Jyväskylä' /&gt;" UiBrowser="[Browser]">
+    <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" Browser="[Browser]" BrowserType="IE" DisplayName="Attach Browser &quot;Tapahtumat Archive - JYP Jyväskylä&quot;" sap:VirtualizedContainerService.HintSize="797,344" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="ce5d5b56549b402335299dcc9e892567" UiBrowser="[Browser]">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
