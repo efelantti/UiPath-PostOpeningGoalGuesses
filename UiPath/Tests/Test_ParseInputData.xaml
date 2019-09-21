@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Test_ParseInputData" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="396,592" sap2010:WorkflowViewState.IdRef="Test_ParseInputData_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:PostOpeningGoalGuesses;assembly=PostOpeningGoalGuesses" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Test_ParseInputData" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="396,719" sap2010:WorkflowViewState.IdRef="Test_ParseInputData_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:PostOpeningGoalGuesses;assembly=PostOpeningGoalGuesses" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
       <x:String>System.Activities</x:String>
@@ -44,9 +44,12 @@
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>PostOpeningGoalGuesses</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Test_ParseInputData" sap:VirtualizedContainerService.HintSize="376,532" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Test_ParseInputData" sap:VirtualizedContainerService.HintSize="376,659" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="inputData" />
       <Variable x:TypeArguments="scg:List(p:GuessData)" Name="guesses" />
@@ -63,6 +66,7 @@
         <OutArgument x:TypeArguments="scg:List(p:GuessData)" x:Key="Guesses">[guesses]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
+    <ui:CheckTrue ErrorMessage="{x:Null}" DisplayName="Check True" Expression="[guesses.Count = 2]" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="CheckTrue_3" />
     <ui:CheckTrue ErrorMessage="{x:Null}" DisplayName="Check True" Expression="[guesses.ElementAt(0).Time = &quot;12:34&quot; And guesses.ElementAt(0).FirstName = &quot;Test1&quot; And guesses.ElementAt(0).LastName = &quot;Name1&quot; And guesses.ElementAt(0).PhoneNumber = &quot;1234&quot; And guesses.ElementAt(0).Email = &quot;1234@test.com&quot;]" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="CheckTrue_1" />
     <ui:CheckTrue ErrorMessage="{x:Null}" DisplayName="Check True" Expression="[guesses.ElementAt(1).Time = &quot;45:45&quot; And guesses.ElementAt(1).FirstName = &quot;Test2&quot; And guesses.ElementAt(1).LastName = &quot;Name2&quot; And guesses.ElementAt(1).PhoneNumber = &quot;56789&quot; And guesses.ElementAt(1).Email = &quot;567@test.com&quot;]" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="CheckTrue_2" />
   </Sequence>
