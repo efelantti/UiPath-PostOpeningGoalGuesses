@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>641,967</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>641,994</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>NavigateToGoalGuessPage_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -55,13 +55,14 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="NavigateToGoalGuessPage" sap:VirtualizedContainerService.HintSize="621,907" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Workflow for navigating to the goal guessing page." DisplayName="NavigateToGoalGuessPage" sap:VirtualizedContainerService.HintSize="621,934" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="pageHeaderFound" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="579,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Navigating to goal guess page.&quot;]" />
@@ -78,7 +79,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="https://www.radiocity.fi/kilpailut/avausmaaliveikkaus-jyp-1189" />
-            <ui:UiElementExists DisplayName="Element Exists H1" Exists="[pageHeaderFound]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+            <ui:UiElementExists DisplayName="Element Exists page header" Exists="[pageHeaderFound]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
               <ui:UiElementExists.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="afbb0bb44942da7e256a6041498e9eed" Selector="&lt;html omit:title='Avausmaaliveikkaus - JYP - Radio City' /&gt;&lt;webctrl tag='H1' aaname='JYPin avausmaaliveikkaus' /&gt;" TimeoutMS="10000" WaitForReady="INTERACTIVE" />
               </ui:UiElementExists.Target>

@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>641,1005</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>641,1032</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>NavigateToJypGameListPage_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -55,13 +55,14 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="NavigateToJypGameListPage" sap:VirtualizedContainerService.HintSize="621,945" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Workflow for navigating to the page where a complete of Jyp games for the season is displayed." DisplayName="NavigateToJypGameListPage" sap:VirtualizedContainerService.HintSize="621,972" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="pageHeaderExists" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="579,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Navigating to Jyp game list page.&quot;]" />
@@ -77,7 +78,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="https://www.jypliiga.fi/ottelut/" />
+            <ui:NavigateTo Browser="[Browser]" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="https://www.jypliiga.fi/ottelut/" />
             <ui:UiElementExists DisplayName="Element Exists &quot;Ottelut ja liput&quot;" Exists="[pageHeaderExists]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
               <ui:UiElementExists.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="554e23845ad1ba1bb1af6da105b308de" Selector="&lt;webctrl aaname='Ottelut ja liput' class='page-title' /&gt;" TimeoutMS="10000" WaitForReady="INTERACTIVE" />
