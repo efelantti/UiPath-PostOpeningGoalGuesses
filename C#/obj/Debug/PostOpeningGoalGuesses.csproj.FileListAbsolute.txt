@@ -1,0 +1,6 @@
+C:\Users\Fanttiset\source\repos\PostOpeningGoalGuesses\bin\Debug\PostOpeningGoalGuesses.dll
+C:\Users\Fanttiset\source\repos\PostOpeningGoalGuesses\bin\Debug\PostOpeningGoalGuesses.pdb
+C:\Users\Fanttiset\source\repos\PostOpeningGoalGuesses\obj\Debug\PostOpeningGoalGuesses.csprojAssemblyReference.cache
+C:\Users\Fanttiset\source\repos\PostOpeningGoalGuesses\obj\Debug\PostOpeningGoalGuesses.csproj.CoreCompileInputs.cache
+C:\Users\Fanttiset\source\repos\PostOpeningGoalGuesses\obj\Debug\PostOpeningGoalGuesses.dll
+C:\Users\Fanttiset\source\repos\PostOpeningGoalGuesses\obj\Debug\PostOpeningGoalGuesses.pdb
