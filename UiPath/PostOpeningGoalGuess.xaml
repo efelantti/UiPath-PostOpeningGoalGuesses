@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>641,1079</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1208,1088</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>PostOpeningGoalGuess_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -52,7 +52,7 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Workflow for posting the guess that has been filled." DisplayName="PostOpeningGoalGuess" sap:VirtualizedContainerService.HintSize="621,1019" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Workflow for posting the guess that has been filled." DisplayName="PostOpeningGoalGuess" sap:VirtualizedContainerService.HintSize="621,1023" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="postSuccesful" />
     </Sequence.Variables>
@@ -87,12 +87,12 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="f8a3c0207adb8d8a76d210a2afc64b7b" Selector="&lt;webctrl tag='BUTTON' aaname='Osallistu kilpailuun' /&gt;" WaitForReady="INTERACTIVE" />
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="5e95dc219fd1e372deb314dad4605fce" Selector="&lt;webctrl id='gform_submit_button_2' tag='INPUT' /&gt;" WaitForReady="INTERACTIVE" />
               </ui:Click.Target>
             </ui:Click>
             <ui:UiElementExists DisplayName="Element Exists &quot;Kiitos osallistumisestasi&quot;" Exists="[postSuccesful]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
               <ui:UiElementExists.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="9a43b4eaa12db5599cf6714e5705bf1f" Selector="&lt;webctrl aaname='Kiitos osallistumisestasi! ' parentid='position-content-block' tag='DIV' /&gt;" TimeoutMS="10000" WaitForReady="INTERACTIVE" />
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="70bc502794c3d1c4308f545310cc85b8" Selector="&lt;webctrl aaname='Vastauksesi on vastaanotettu*' tag='DIV' /&gt;" TimeoutMS="10000" WaitForReady="INTERACTIVE" />
               </ui:UiElementExists.Target>
             </ui:UiElementExists>
           </Sequence>

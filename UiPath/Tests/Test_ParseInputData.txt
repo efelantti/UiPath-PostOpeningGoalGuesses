@@ -12,5 +12,5 @@
   "LastName": "Name2",
   "PhoneNumber": "56789",
   "Email": "567@test.com"
- },
+  }
 ]
